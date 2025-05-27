@@ -8,10 +8,25 @@
   --font-text: Poppins;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container-main {
+  max-width: 900px;
+  min-width: 655px;
+  padding: 50px;
+  text-align: center;
+}
+.title-page {
+  text-align: center;
 }
 
 .title {
@@ -21,11 +36,38 @@
   font-size: 2.25rem;
 }
 
-.article-page .img {
-  background-image: url("./resources/photo_1.png");
-  width: 350px;
-  height: 350px;
-  background-size: cover;
+.seperator {
+  margin: 30px 0;
+}
+
+.content-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.article-page:nth-child(2) {
+  margin: 50px 0;
+}
+
+.text-article {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.text-article p {
+  margin-bottom: 20px;
 }
 
 .article-page p {
@@ -41,3 +83,28 @@
   font-weight: 500;
   font-size: 0.875rem;
 }
+
+/* DISEÑO MOBIL */
+.article-page .img1 {
+  background-image: url("./resources/photo_1.png");
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--color-optinal);
+}
+.article-page .img2 {
+  background-image: url("./resources/photo_2.png");
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--color-optinal);
+}
+.article-page .img3 {
+  background-image: url("./resources/photo_3.png");
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--color-optinal);
+}
+/* DISEÑO TABLET */
+/* DISEÑO DESKTOP */
